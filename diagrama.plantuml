@@ -1,0 +1,13 @@
+@startuml
+
+left to right direction
+actor Jugador as "Jugador"
+rectangle "Rompecabezas Deslizante" {
+    usecase "Resolver Rompecabezas" as UC1
+    usecase "Mover Ficha" as UC2
+}
+
+Jugador --> UC1 : Utiliza
+Jugador --> UC2 : Realiza
+
+@enduml
